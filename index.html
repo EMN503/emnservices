@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMNSERVICES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo"><img src="images/EMNDARK.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>DevOps Services by <span><a href="https://linkedin.com/in/emin-gambarli">Emin Gambarli</a></span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt tenetur</p>
+                <a href="#" class="applynow">Apply Now</a>
+            </div>
+            <div class="imgBox">
+                <img src=""  id="image">
+            </div>
+        </div>
+        
+    </section>
+
+    <script type="text/javascript">
+        let image = document.getElementById("image")
+        let images = ["images/gitlab.png", "images/Ansible.png", "images/Jenkins.png", "images/HashiCorpBlack.png"]
+        setInterval(function(){
+            let rnd = Math.floor(Math.random()*images.length);
+            image.src = images[rnd];
+        }, 800)
+    </script>
+</body>
+</html>
